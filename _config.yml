@@ -1,0 +1,4 @@
+name: Zhijie (Alan) He
+markdown: kramdown
+
+permalink: /blog/:year/:month/:day/:title
