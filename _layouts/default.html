@@ -16,32 +16,47 @@
 </head>
 
 <body>
-	<nav>
-		<ul>
-			<li><a href="/">Home</a></li>
-			<li><a href="/docs/alan_he_cv.pdf">CV</a></li>
-			<!-- Linkedin button -->
-			<li>
-				<a href="https://www.linkedin.com/in/zhijie-he">
-					<i class="fa fa-linkedin-square" style="font-size:23px;color:#0077b5"></i>
-				</a>
-			</li>
-			<!-- github button -->
-			<li>
-				<a href="https://github.com/Zhijie-He">
-					<i class="fa fa-github" style="font-size:23px;color:#333"></i>
-				</a>
-			</li>
-		</ul>
-
-	</nav>
+	<div id="particles-js">
+		<nav>
+			<ul class="header-icons">
+				<li><a href="/">Home</a></li>
+				<li>
+					<a href="../docs/alan_he_cv.pdf">
+						CV
+					</a>
+				</li>
+				<!-- Linkedin button -->
+				<li>
+					<a aria-label="My LinkedIn Profile" target="_blank" href="https://www.linkedin.com/in/zhijie-he">
+						<!-- <i class="fa fa-linkedin-square" style="font-size:23px;color:#0077b5"></i> -->
+						<i class="fa fa-linkedin-square" style="font-size:23px;color:#0077b5" aria-hidden="true"></i>
+					</a>
+				</li>
+				<!-- github button -->
+				<li>
+					<a aria-label="My Github Profile" target="_blank" href="https://github.com/Zhijie-He">
+						<!-- <i class="fa fa-github" style="font-size:23px;color:#333"></i> -->
+						<i class="fa fa-github" style="font-size:23px;color:#333" aria-hidden="true"></i>
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
 	<div class="container">
-		<div id="particles-js">
-			{{ content }}
-		</div>
+		{{ content }}
 	</div><!-- /.container -->
 	<!-- Import JS: Particles Theme -->
 	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+	<!-- Import JS: Sweet Scroll -->
+	<script src="../assets/js/sweet-scroll.min.js"></script>
+	<!-- Import JS: Google Analytics -->
+	<script src="../assets/js/google-analytics.js"></script>
+	<!-- Import JS: Main Script -->
+	<script src="../assets/js/main.js"></script>
+
+	<footer class="footer">
+		<p>&copy; Zhijie He, 2022</p>
+	</footer>
 </body>
 
 <script>
@@ -61,8 +76,6 @@
 	ga('send', 'pageview');
 </script>
 
-<footer class="footer">
-	<p>&copy; Zhijie He, 2022</p>
-</footer>
+
 
 </html>

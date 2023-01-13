@@ -32,10 +32,7 @@ p {
     line-height: 1.1em;
     color: #333;
 }
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
-}
+
 pre {
 	background-color: #EBECE4;
 	border-radius: 3px;
@@ -84,16 +81,56 @@ div.video-responsive iframe{
 .footer {
     background: #fff;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);
+    background: -webkit-linear-gradient(to right, #fff, #fff);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #2B32B2, #1488CC);
+    background: linear-gradient(to right, #fff, #fffC);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    padding: 10px 0;
-    margin-top: 100px;
+    
+
     text-align: center;
     color: #fff
 }
 
 footer{
+    font-size: .8em;
     display: block
 }
+
+
+.header-icons {
+    color: #000000;
+    justify-content: center;
+    text-align: center
+}
+
+
+.header-icons :active,
+.header-icons :hover {
+    color: #1488CC;
+    background: #fff;
+    text-decoration:none;
+}
+
+
+
+#particles-js {
+    background: #ffff;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffff, #ffff);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffff, #ffff);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    vertical-align: bottom;
+    width: 100%;
+    min-height: 10vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed
+}
+
+#particles-js .particles-js-canvas-el {
+    width: 100% !important;
+    height: 10vh !important
+}
+
+
