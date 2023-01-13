@@ -82,7 +82,7 @@ div.video-responsive iframe{
 }
 
 .footer {
-    background: #1488CC;
+    background: #fff;
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);
     /* Chrome 10-25, Safari 5.1-6 */
@@ -92,21 +92,6 @@ div.video-responsive iframe{
     margin-top: 100px;
     text-align: center;
     color: #fff
-}
-
-.footer .love {
-    color: red
-}
-
-.footer a {
-    text-decoration: none;
-    margin: 0;
-    color: #fff
-}
-
-.footer a:active,
-.footer a:hover {
-    color: #4b5664
 }
 
 footer{
