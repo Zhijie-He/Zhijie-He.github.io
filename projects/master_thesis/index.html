@@ -1,26 +1,22 @@
 ---
 layout: default
-title: "Users’ Departure Time Prediction Based on Light Gradient Boosting Decision Tree"
+title: "Content Adaptive NN-Based In-Loop Filter for VVC"
 ---
 
 <center><h1>{{ page.title }}</h1></center>
 
 <td>
 	<center>
-		Wireless Algorithms, Systems, and Applications (WASA 2022)<br>
+		Aaltodoc<br>
 		<br>
-		<nobr>Lingyu Zhang <sup>1,2</sup> </nobr> &emsp;&emsp; <nobr> Zhijie He <sup>2</sup></nobr> &emsp;&emsp; <nobr> Xiao Wang<sup>2</sup> </nobr> &emsp;&emsp; <nobr> Ying Zhang<sup>2</sup>  </nobr> &emsp;&emsp; <nobr> Jian Liang<sup>2</sup>  </nobr> &emsp;&emsp; <nobr> Guobin Wu<sup>2</sup>  </nobr> &emsp;&emsp; 
-		<nobr> Ziqiang Yu<sup>3</sup>  </nobr> &emsp;&emsp;<nobr> Penghui Zhang <sup>4</sup> </nobr> &emsp;&emsp;<nobr>  Minghao Ji<sup>4</sup>  </nobr> &emsp;&emsp;<nobr> Pengfei Xu<sup>4</sup></nobr> &emsp;&emsp;<nobr> Yunhai Wang<sup>1</sup> </nobr> &emsp;&emsp; <br>
+		<nobr> Zhijie He </nobr> &emsp;&emsp;  <br>
 		<br>
-		<nobr><sup>1</sup>School of Computer Science and Technology, Shandong University, Qingdao, China</nobr> &emsp;&emsp;<br>
-		<sup>2</sup>Didi Chuxing, Beijing, China</nobr> &emsp;&emsp;<br>
-		<sup>3</sup>Yantai University, Yantai, China</nobr> &emsp;&emsp;<br>
-		<sup>4</sup>School of Information Science and Technology, Northwest University,
-Kirkland, USA</nobr> &emsp;&emsp;<br>
+		<nobr> Aalto University, Espoo, Finland</nobr> &emsp;&emsp;<br>
+	
 		<br>
 		
-	<!-- 	<img style="vertical-align:middle" src="user_departure_time_tasear.png"  width="100%" height="inherit"/>	
-		 -->
+		<img style="vertical-align:middle" src="master_thesis_teasar.png"  width="100%" height="inherit"/>	
+		
 	</center>
 </td>
 
@@ -29,24 +25,32 @@ Kirkland, USA</nobr> &emsp;&emsp;<br>
 <td>
 	<hr>
 	<h3 style="margin-bottom:10px;">Abstract</h3>
-With the development of urban transportation networks, the flow of
-people in cities generally shows the characteristics of concentration, periodicity
-and irregularity, and a typical example is rush hour. For most existing taxi-hailing
-apps, users frequently queue up for a relatively long time during rush hour and
-may even fail to get orders taken due to various factors. To solve this problem, we
-propose a users’ departure time prediction model based on Light Gradient Boosting Machine (TP-LightGBM), which will remind users to book taxis before their
-journeys. As we know, TP-LightGBM may be the first model for departure time
-prediction. We uncover that travel behavior patterns vary under different external
-conditions through statistics and analysis of users’ historical orders from multiple perspectives. Furthermore, we extract multiple features from these orders and
-select the favorable features by calculating their information gain as the input of
-TP-LightGBM to predict users’ departure time. Therefore, our model can provide
-users with the recommendations of the best departure time if they need them. The
-final experimental results on our datasets indicate that TP-LightGBM has more
-excellent performance with great stability in predicting user departure time than
-other baseline models.
+The most recent video coding standard VVC contains five in-loop filters to reduce
+compression artifacts that come from the common drawbacks of block-based hybrid
+compression framework. However, those traditional in-loop filters are insufficient to
+deal with the complicated compression artifacts. The emergence of Neural Networks
+(NNs) has brought significant advancements in the realm of image and video processing,
+offering a promising avenue for improving video compression. Many prior studies in
+this domain have focused on training models on large datasets to achieve generalization,
+rather than catering to specific content characteristics. In this work, we introduced a
+content-adaptive in-loop filter for Versatile Video Coding (VVC) working with other
+in-loop filters. The content adaptation is achieved by over-fitting a pre-trained model at
+the encoder side on the test data. To reduce the bitrate overhead, the Neural Network
+Compression and Representation (NNR) standard has been introduced which focuses
+on compressing NNs efficiently. Furthermore, rather than over-fitting all parameters
+within the NN model, we introduce a set of learnable parameters known as multipliers,
+which serve to further reduce the bitrate overhead. The proposed model takes auxiliary
+information including Boundary Strength (BS) and Quantization parameter (QP) as
+input. Additionally, we have conducted a comprehensive series of experiments to
+identify the optimal combination of hyperparameters for this approach. The results
+indicate coding gains of -2.07% (Y), -5.54% (Cb), -1.95% (Cr) Bjøntegaard Delta rate
+(BD-rate) for Class B and -1.34% (Y), -1.88% (Cb), -0.52% (Cr) Bjøntegaard Delta
+rate (BD-rate) for Class D with respect to the Peak Signal-to-Noise Ration (PSNR)
+on top of the Versatile Video Coding (VVC) Test Model (VVC) 12.0 with NN-based
+Video Coding (NNVC) 5.0, in Random Access (RA) configuration.
 
 <td>
-	<h3> Paper: [<a href="user_departure_time.pdf">PDF</a>] &nbsp; &nbsp; &nbsp; &nbsp;   
+	<h3> Paper: [<a href="https://aaltodoc.aalto.fi/server/api/core/bitstreams/146469f9-a1ba-460f-a12d-339ad963dc98/content">PDF</a>] &nbsp; &nbsp; &nbsp; &nbsp;   
 		 
 </td>
 
@@ -54,13 +58,10 @@ other baseline models.
 
 <h3 style="margin-bottom:0px;">Bibtex</h3>
 <pre>
-@inproceedings{zhang2022users,
-  title={Users’ Departure Time Prediction Based on Light Gradient Boosting Decision Tree},
-  author={Zhang, Lingyu and He, Zhijie and Wang, Xiao and Zhang, Ying and Liang, Jian and Wu, Guobin and Yu, Ziqiang and Zhang, Penghui and Ji, Minghao and Xu, Pengfei and others},
-  booktitle={International Conference on Wireless Algorithms, Systems, and Applications},
-  pages={595--605},
-  year={2022},
-  organization={Springer}
+@mastersthesis{he2023content,
+  title={Content Adaptive NN-Based In-Loop Filter for VVC},
+  author={He, Zhijie and others},
+  year={2023}
 }
 
 </pre>
