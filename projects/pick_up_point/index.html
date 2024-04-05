@@ -1,0 +1,60 @@
+---
+layout: default
+title: "Pick-Up Point Recommendation Using Users’ Historical Ride-Hailing Orders"
+---
+
+<center><h1>{{ page.title }}</h1></center>
+
+<td>
+	<center>
+		Wireless Algorithms, Systems, and Applications (WASA 2022)<br>
+		<br>
+		<nobr>Chong Zhu  </nobr> &emsp;&emsp; <nobr> Yuan Xue </nobr> &emsp;&emsp; <nobr> Zhijie He </nobr> &emsp;&emsp; <nobr> Zhenqiang Bao  </nobr> &emsp;&emsp; <nobr> Zhaoyue Zhang  </nobr> &emsp;&emsp; <nobr> Kaixuan Hu  </nobr> &emsp;&emsp; <br>
+		<br>
+		<nobr> Yangzhou University</nobr> &emsp;&emsp;<br>
+		<br>
+		
+		<img style="vertical-align:middle" src="pick_up_time.png"  width="100%" height="inherit"/>	
+		
+	</center>
+</td>
+
+<br>
+	
+<td>
+	<hr>
+	<h3 style="margin-bottom:10px;">Abstract</h3>
+	The ride-hailing app must provide users with appropriate pick-up
+points when they submit their travel demands and their locations are recognized,
+efficiently reducing users’ operation complexity and optimizing the software performance. Most apps currently try to search for locations near users’ current GPS
+locations as the Points of Interest (POIs), which is an efficient method of locating, but seriously ignores personal preferences. In this paper, we deeply analyze the historical ride-hailing orders of users on Didi Chuxing platform (http://
+www.didiglobal.com). We explore the given dataset, get the general regularity
+of users’ commuting, and propose a Pick-Up Points Recommendation Model
+(PPRM) based on the clustering algorithm. We cluster users’ historical orders
+using Density-Based Spatial Clustering of Applications with Noise (DBSCAN)
+according to orders’ spatial information. In this way, the candidate outputs closest to the user’s current environment/feature can be found in a specific category.
+The linear addition of the candidate outputs severs as the final pick-up point
+provided. Therefore, our model can offer recommendations of the best pick-up
+points. In addition, experimental results based on real-world datasets indicate that
+our model can efficiently and accurately provide users with optimal points.
+</td>
+
+<td>
+	<h3> Paper: [<a href="pick_up_point.pdf">PDF</a>] &nbsp; &nbsp; &nbsp; &nbsp;   
+		 
+</td>
+
+
+
+<h3 style="margin-bottom:0px;">Bibtex</h3>
+<pre>
+  @inproceedings{zhang2022pick,
+  title={Pick-Up Point Recommendation Using Users’ Historical Ride-Hailing Orders},
+  author={Zhang, Lingyu and He, Zhijie and Wang, Xiao and Zhang, Ying and Liang, Jian and Wu, Guobin and Yu, Ziqiang and Zhang, Penghui and Ji, Minghao and Xu, Pengfei and others},
+  booktitle={International Conference on Wireless Algorithms, Systems, and Applications},
+  pages={393--405},
+  year={2022},
+  organization={Springer}
+}
+
+</pre>
